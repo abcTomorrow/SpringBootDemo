@@ -1,0 +1,11 @@
+
+#mapper:
+#  mappers:
+#    - tk.mybatis.mapper.common.Mapper
+#  not-empty: false
+#  identity: MYSQL
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
