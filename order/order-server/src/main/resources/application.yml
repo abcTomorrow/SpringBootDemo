@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: order
+  cloud:
+    config:
+      discovery:
+        enabled: true
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: wojiushiwo
+    url: jdbc:mysql://127.0.0.1:3306/study
+  jpa:
+    show-sql: true
+
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:8090/eureka/
+server:
+  port: 8091
